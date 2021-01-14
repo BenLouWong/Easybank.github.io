@@ -1,0 +1,22 @@
+.hero{
+    text-align: center;
+    position: relative;
+    background-image: url(../../images/bg-intro-mobile.svg);
+    background-position: top;
+    background-size: 65vh;
+    background-repeat: no-repeat;
+    background-color: $very-light-gray;
+    height: min-content;
+    width: 100vw;
+    padding-bottom: 3rem;
+
+    &__phones{
+        width: auto;
+        height: 28rem;
+        z-index: 10;
+    }
+
+    &__textbox{
+        padding: 1.5rem 2rem;
+    }
+}

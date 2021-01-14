@@ -1,0 +1,11 @@
+.hide-for-mobile{
+    @include respond(tab-landscape){
+        display: none;
+    }
+}
+
+.hide-for-desktop{
+    @include respond(small-desktop){
+        display: none;
+    }
+}

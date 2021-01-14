@@ -1,0 +1,33 @@
+.articles{
+    background-color: $very-light-gray;
+
+    &__heading{
+        flex-direction: column;
+        text-align: center;
+        padding: 0 2rem;
+    }
+
+}
+
+.article{
+    background-color: $very-light-gray;
+
+    &__card{
+        flex-direction: column;
+        border-radius: 3px;
+        margin: 1.2rem;
+        overflow: hidden;
+        background-color: $white;
+    }
+
+    &__textbox{
+        padding: 1.8rem;
+
+        &>*{
+            &:not(:last-child){
+                padding-bottom: 0.7rem;
+            }
+        }
+    }
+
+}

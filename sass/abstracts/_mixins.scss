@@ -1,0 +1,39 @@
+//-----------------------//
+//--MEDIA QUERY MANAGER--//
+//-----------------------//
+
+/* 
+
+PHone: 0 - 600px
+Tablet Portrait: 600 - 900px
+Tablet Landscape: 900 - 1200px
+Normal Styles: 1200 - 1800px
+Desktop: 1800px + 
+
+*/
+
+// $breakpoint argument choices:
+// - phone
+// - tab-port
+// - tab-landscape
+// - big-desktop
+//1em = 16px
+//rems do not work in all browserse in media queries. better to use ems
+
+@mixin respond($breakpoint){
+    @if $breakpoint == phone{ //https://sass-lang.com/documentation/at-rules/control/if
+        @media only screen and (max-width: 37.5em) { @content }; //600px
+    }
+    @if $breakpoint == tab-port{ //https://sass-lang.com/documentation/at-rules/control/if
+        @media only screen and (max-width: 56.25em) { @content }; //900px
+    }
+    @if $breakpoint == tab-landscape{ //https://sass-lang.com/documentation/at-rules/control/if
+        @media only screen and (max-width: 75em) { @content }; //1200px
+    }
+    @if $breakpoint == small-desktop{
+        @media only screen and (min-width: 75em) { @content };
+    }
+    @if $breakpoint == big-desktop{ //https://sass-lang.com/documentation/at-rules/control/if
+        @media only screen and (min-width: 112.5em) { @content }; //1800px
+    }
+}

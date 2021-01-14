@@ -1,0 +1,36 @@
+.btn{
+    font-size: $font-small;
+    display: inline-flex;
+    padding: 0.875rem 2.1875rem;
+    text-decoration: none;
+    background-image: linear-gradient(to right,  #31d35c, #2bb7da, #31d35c);
+    background-size: 200% auto;
+    border-radius: 10rem;
+    border: none;
+    color: white;
+    font-weight: 400;
+    transition: all 0.3s ease;
+
+    &:hover,
+    &:active{
+        background-position: 100%;
+        filter: brightness(1.1);
+    }
+}
+
+.btn_header{
+    @include respond(tab-landscape){
+        display: none;
+    }
+}
+
+.article__btn{
+    text-decoration: none;
+    font-size: $font-small-med;
+    transition: color .3s ease;
+    cursor: pointer;
+
+    &:hover{
+        color: $bright-cyan;
+    }
+}

@@ -1,0 +1,44 @@
+body{
+    color: $grayish-blue;
+    font-size: $font-small;
+}
+
+//Flexbox
+
+.flex{
+    display: flex;
+    
+    &__jc-sb{
+        justify-content: space-between;
+    }
+
+    &__jc-center{
+        justify-content: center;
+    }
+
+    &__ai-center{
+        align-items: center;
+    }
+}
+
+//Titles
+.heading-1{
+    color: $dark-blue;
+    font-size: $font-large;
+    padding: 1.5rem;
+}
+
+.heading-2{
+    color: $dark-blue;
+    font-size: $font-med-large;
+    padding: 1.5rem;
+}
+
+.heading-3{
+    color: $dark-blue;
+}
+
+.heading-4{
+    color: $dark-blue;
+}
+

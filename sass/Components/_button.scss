@@ -2,6 +2,7 @@
     font-size: $font-small;
     display: inline-flex;
     padding: 0.875rem 2.1875rem;
+    margin: 1.5rem;
     text-decoration: none;
     background-image: linear-gradient(to right,  #31d35c, #2bb7da, #31d35c);
     background-size: 200% auto;
@@ -33,4 +34,9 @@
     &:hover{
         color: $bright-cyan;
     }
+}
+
+.logo{
+    height: 1.375rem;
+    width: 8.8125rem;
 }

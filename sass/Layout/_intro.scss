@@ -12,20 +12,15 @@
 }
 
 .about{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    align-items: center;
+    grid-gap: 1.5rem;
+    justify-content: center;
 
     &__textbox{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-        justify-items: center;
-        grid-gap: 1rem;
         padding: 1rem 2rem;
         text-align: center;
-
-        // &:not(:last-child){
-        //     padding: 1rem 0 1rem 0;
-        // }
-
-        // &:last-child
 
         &-icon{
            grid-row: 1 / 3;

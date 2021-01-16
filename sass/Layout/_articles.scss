@@ -1,27 +1,37 @@
 .articles{
     background-color: $very-light-gray;
+    display: grid;
+    padding: 1.5rem;
 
     &__heading{
         flex-direction: column;
         text-align: center;
-        padding: 0 2rem;
     }
 
 }
 
 .article{
     background-color: $very-light-gray;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    align-items: start;
+    grid-gap: 1.5rem;
+    justify-content: center;
 
     &__card{
         flex-direction: column;
         border-radius: 3px;
-        margin: 1.2rem;
         overflow: hidden;
         background-color: $white;
     }
 
+    &__img{
+        width: auto;
+        height: 13rem;
+    }
+
     &__textbox{
-        padding: 1.8rem;
+        padding: 1.5rem;
 
         &>*{
             &:not(:last-child){

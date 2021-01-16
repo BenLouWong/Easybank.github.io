@@ -1,0 +1,82 @@
+.footer{
+    background-color: $dark-blue;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    align-items: center;
+    padding: 2.5rem;
+
+    &__social{
+        display: grid;
+        grid-row-gap: 0.8rem;
+        align-items: center;
+        justify-items: center;
+
+        &-icons{
+            list-style: none;
+
+            .icon__btn{
+                text-decoration: none;
+                padding: 1.5rem .35rem;
+                //transition: all .3s ease;
+
+                svg path{
+                    transition: fill .3s ease-in-out;
+                }
+
+                &:hover svg path{
+                    fill: $lime-green;
+                }
+            }
+        }
+    }
+
+    
+
+    &__nav{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        padding: 1rem;
+
+        .nav{
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(6rem, min-content));
+            align-items: center;
+            justify-items: start;
+
+            &__item{
+                padding: 0.25rem;
+                color: $very-light-gray;
+                transition: color .3s ease;
+                cursor: pointer;
+
+                &:hover{
+                    color: $lime-green;
+                }
+            }
+        }
+        
+    }
+
+    &__cta{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+
+        &>*{
+            &:not(:last-child){
+                margin-top: 1rem;
+            }
+        }
+
+        .btn{
+            align-items: center;
+            margin: 1rem 0;
+        }
+
+        .legal{
+            text-align: right;
+        }
+    }
+}

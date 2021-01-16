@@ -8,15 +8,16 @@
     background-color: $very-light-gray;
     height: min-content;
     width: 100vw;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
 
     &__phones{
         width: auto;
-        height: 28rem;
+        height: 60vh;
         z-index: 10;
     }
 
     &__textbox{
-        padding: 1.5rem 2rem;
+        padding: 0 2rem;
     }
+
 }

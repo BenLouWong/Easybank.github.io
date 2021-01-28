@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     align-items: center;
-    padding: 2.5rem;
+    padding: 2.5rem 3.5rem;
 
     &__social{
         display: grid;
@@ -35,8 +35,11 @@
     &__nav{
         display: grid;
         align-items: center;
-        justify-items: center;
         padding: 1rem;
+
+        @include respond(phone){
+            justify-items: center;
+        }
 
         .nav{
             list-style: none;
@@ -44,6 +47,10 @@
             grid-template-columns: repeat(auto-fit, minmax(6rem, min-content));
             align-items: center;
             justify-items: start;
+
+            @include respond(phone){
+                justify-items: center;
+            }
 
             &__item{
                 padding: 0.25rem;
@@ -77,6 +84,10 @@
 
         .legal{
             text-align: right;
+
+            @include respond(phone){
+                text-align: center;
+            }
         }
     }
 }
